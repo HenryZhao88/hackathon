@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Decoder</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <h1>Base64 Decoder</h1>
+        </header>
+
+        <main>
+            <div class="converter-container">
+                <div class="decode-section">
+                    <textarea id="input" placeholder="Enter Base64 string to decode..."></textarea>
+                    <button onclick="decodeBase64()" class="primary-btn">Decode →</button>
+                </div>
+                
+                <div class="result-section">
+                    <textarea id="output" placeholder="Decoded result will appear here..." readonly></textarea>
+                    <button onclick="copyOutput()" class="secondary-btn">Copy to Clipboard</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="../index.html" class="home-link">← Return to Home</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

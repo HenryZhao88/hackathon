@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex to RGB Converter</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="mb-4">
+            <h1>Hex to RGB Converter</h1>
+            <p class="tagline">Convert hexadecimal color codes to RGB values</p>
+        </header>
+
+        <main>
+            <div class="converter-container">
+                <div class="input-section">
+                    <textarea id="hex-input" placeholder="Enter hex color (e.g., #FF5733 or FF5733)..." autofocus></textarea>
+                    <button onclick="convertHexToRGB()" class="primary-btn">Convert →</button>
+                </div>
+                
+                <div class="result-section">
+                    <textarea id="rgb-output" placeholder="RGB result will appear here..." readonly></textarea>
+                    <div class="color-preview" id="color-preview"></div>
+                    <button onclick="copyRGBResult()" class="secondary-btn">Copy RGB Value</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-links">
+                <a href="../index.html" class="home-link">← Return to Home</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
